@@ -8,21 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <style>
-        .heading {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-decoration: underline ;
-    font-family: 'Roboto', sans-serif ;
-    }
-     #data{
-        font-family: 'Poppins', sans-serif;
-       }
-        </style>
+        .hobbies{
+             list-style-type:lower-alpha;  /* upper-roman; | lower-roman | lower-alpha | upper-alpha  */
+        }
+        #techStack{
+            list-style-type: circle;  /* circle | square  */
+        }
+        .uiBackendTechStack{
+            list-style-type: none;
+        }
+      
+        .mainItem::before{
+            content: "👉";
+        } 
+    </style>
 </head>
 <body>
     <section id="data">
         <h2 class="heading"> My Hobbies </h2>
-        <ol>
+        <ol class="hobbies">
         <li> Reading </li>
         <li> Coding</li>
         <li> Gaming</li>
@@ -30,7 +34,7 @@
         </ol>
         <hr>
         <h2 class="heading"> My Technology Stack </h2>
-        <ul>
+        <ul class="techStack">
         <li> HTML </li>
         <li> CSS</li>
         <li> JavaScript </li>
@@ -51,8 +55,8 @@
         <hr>
         <h2 class="heading"> My Technology Stack - UI and Backend along with
         DB </h2>
-        <ol>
-        <li>UI Technology</li>
+        <ol class="uiBackendTechStack">
+        <li class="mainItem">UI Technology</li>
         <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -60,7 +64,7 @@
         <li>NodeJS</li>
         <li>ExpressJS</li>
         </ul>
-        <li>Backend
+        <li class="mainItem">Backend
         Technology</li>
         <ol>
         <li>Core Java</li>
@@ -76,7 +80,7 @@
         <li> Reactive
         Programming</li>
         </ol>
-        <li>Database</li>
+        <li class="mainItem">Database</li>
         <ol>
         <li>Oracle</li>
         <li>MySQL</li> <li>MongoDB</li>

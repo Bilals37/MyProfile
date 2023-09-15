@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .fieldset {
+            background-color: black;
+            margin-top: 50px;
+        }
+
+        label {
+            color: #00FF00;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        input {
+            color: darkblue;
+            text-transform: capitalize;
+            border-color: rgb(141, 60, 60);
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        #formHeading:hover {
+            color: rgb(109, 109, 238);
+        }
+
+        #formHeading {
+            font-size: larger;
+            font-family: 'Roboto', sans-serif;
+            padding-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+        }
+        a:hover {
+            color: white
+        }
+
+        td {
+            padding-bottom: 10px;
+        }
+
+        .button {
+            margin-left: 168px;
+            padding-bottom: 10px;
+        }
+
+        .submit {
+            background-color: yellow;
+        }
+
+        .reset {
+            background-color: yellow;
+        }
+
+        .socialhandle {
+            margin-left: 10px;
+            padding-top: 30px;
+            ;
+            font-size: large;
+        }
+
+        .footer {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="fieldset">
+        <fieldset>
+            <legend id="formHeading">Student Registration Form </legend>
+            <table>
+                <form>
+                    <tbody>
+                        <tr>
+                            <td><label for="">First Name</label> </td>
+                            <td> <input type="text" autofocus maxlength="10" placeholder="First Name"> </td>
+                        </tr>
+                        <tr>
+                            <td><label for=""> Your Last Name </label> </td>
+                            <td> <input type="text" placeholder="Last Name" maxlength="10"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="">Email Address</label></td>
+                            <td><input type="email" required placeholder="abc@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Mobile</label></td>
+                            <td><input type="number" required maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Password</label></td>
+                            <td><input type="password"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="">Graduation</label></td>
+                            <td> <input type="radio" name="Graduation">
+                                <label for> B.E</label>
+                                <input type="radio" name="Graduation">
+                                <label for> B.Tech</label>
+                                <input type="radio" name="Graduation">
+                                <label for> B.Sc</label>
+                                <input type="radio" name="Graduation">
+                                <label for> Poly</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for=""> Pass Out Year</label> </td>
+                            <td> <input type="date"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for=""> Country</label> </td>
+                            <td> <input type="text" value="India" readonly> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="">Upload Mark sheets</label> </td>
+                            <td> <input type="file" multiple> </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="">Upload Profile Photo</label></td>
+                            <td> <input type="file"> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for=""> Date of Birth</label> </td>
+                            <td> <input type="date"> </td>
+                        </tr>
+                        <tr>
+                            <td><label for=""> Select State</label></td>
+                            <td>
+                                <select id="country-state" name="country-state">
+                                    <option value="">Select state</option>
+                                    <option value="AN">Andaman and Nicobar Islands</option>
+                                    <option value="AP">Andhra Pradesh</option>
+                                    <option value="AR">Arunachal Pradesh</option>
+                                    <option value="AS">Assam</option>
+                                    <option value="BR">Bihar</option>
+                                    <option value="CH">Chandigarh</option>
+                                    <option value="CT">Chhattisgarh</option>
+                                    <option value="DN">Dadra and Nagar Haveli</option>
+                                    <option value="DD">Daman and Diu</option>
+                                    <option value="DL">Delhi</option>
+                                    <option value="GA">Goa</option>
+                                    <option value="GJ">Gujarat</option>
+                                    <option value="HR">Haryana</option>
+                                    <option value="HP">Himachal Pradesh</option>
+                                    <option value="JK">Jammu and Kashmir</option>
+                                    <option value="JH">Jharkhand</option>
+                                    <option value="KA">Karnataka</option>
+                                    <option value="KL">Kerala</option>
+                                    <option value="LA">Ladakh</option>
+                                    <option value="LD">Lakshadweep</option>
+                                    <option value="MP">Madhya Pradesh</option>
+                                    <option value="MH">Maharashtra</option>
+                                    <option value="MN">Manipur</option>
+                                    <option value="ML">Meghalaya</option>
+                                    <option value="MZ">Mizoram</option>
+                                    <option value="NL">Nagaland</option>
+                                    <option value="OR">Odisha</option>
+                                    <option value="PY">Puducherry</option>
+                                    <option value="PB">Punjab</option>
+                                    <option value="RJ">Rajasthan</option>
+                                    <option value="SK">Sikkim</option>
+                                    <option value="TN">Tamil Nadu</option>
+                                    <option value="TG">Telangana</option>
+                                    <option value="TR">Tripura</option>
+                                    <option value="UP">Uttar Pradesh</option>
+                                    <option value="UT">Uttarakhand</option>
+                                    <option value="WB">West Bengal</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Permanant Address</label></td>
+                            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                        </tr>
+                    </tbody>
+                </form>
+            </table>
+            <div class="button">
+                <span><input type="reset" name="reset" class="reset"></span>
+                <span><input type="submit" name="submit" class="submit"></span>
+            </div>
+            <hr>
+            <footer class="footer">
+                <section>
+                    <span class="socialhandle"><label for="">SSO sign in Options</label></span>
+                    <span class="socialhandle"><a href="https://twitter.com/" target="_blank"> <i
+                                class="fa fa-lg fa-twitter" aria-hidden="true"></i></a></span>
+                    <span class="socialhandle"><a href="https://www.facebook.com/" target="_blank"> <i
+                                class="fa fa-lg fa-facebook-official" aria-hidden="true"></i></a></span>
+                    <span class="socialhandle"><a href="https://www.instagram.com/"><i class="fa fa-lg fa-instagram"
+                                aria-hidden="true"></i></a></span>
+
+                </section>
+            </footer>
+
+        </fieldset>
+    </section>
+
+</body>
+
+</html>
